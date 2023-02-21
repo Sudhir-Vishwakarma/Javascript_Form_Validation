@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <form class="form">
+            <div class="form-container">
+                <div class="caption-container">Register Here!</div>
+               <div class="firstname-container">
+                    <input type="text" placeholder="FirstName" class="firstname-input" id="input-firstname"/>
+                    <p class="firstname-error" id="error-firstname"></p>
+               </div>
+               <div class="lastname-container">
+                    <input type="text" placeholder="LastName" class="lastname-input" id="input-lastname"/>
+                    <p class="lastname-error" id="error-lastname"></p> 
+               </div>
+               <div class="email-container">
+                    <input type="email" placeholder="E-mail" class="email-input" id="input-email"/>
+                    <p class="email-error" id="error-email"></p> 
+                </div>
+                <div class="password-container">
+                    <input type="password" placeholder="Password" class="password-input" id="input-password"/>
+                    <p class="password-error" id="error-password"></p> 
+                </div>
+                <div class="confirm-password-container">
+                    <input type="password" placeholder="Confirm-Password" class="confirm-password-input" id="input-confirm-password"/>
+                    <p class="confirm-password-error" id="error-confirm-password"></p> 
+                </div>
+                <div class="contact-container">
+                    <input type="text" placeholder="Contact" class="contact-input" id="input-contact"/>
+                    <p class="contact-error" id="error-contact"></p> 
+                </div>
+                <div class="google"><span class="google-icon"><img src="./Icons/google.png" ></span>Continue with Google</div>
+                <div class="facebook"><span class="facebook-icon"><img src="./Icons/facebook.png" /></span>Continue with Facebook</div>
+                <div class="btn-container">
+                    <button id="btn-account" type="submit" >Create Account</button> 
+                </div>   
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./JS/validate.js"></script>
+</body>
+</html>
